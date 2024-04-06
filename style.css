@@ -1,0 +1,136 @@
+* {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(160, 236, 222);
+}
+.container {
+  height: 90%;
+  width: 80%;
+  border-radius: 10px;
+  background: rgb(72, 108, 108);
+  overflow: hidden;
+}
+.top-container {
+  padding: 0 20%;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(23, 180, 180);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  width: 20%;
+  border-radius: 5px;
+  font-size: 19px;
+  color: rgb(30, 33, 36);
+  gap: 10px;
+}
+.elem {
+  height: 100%;
+  width: 60%;
+  background-color: aquamarine;
+  border-radius: 2px;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+  font-size: 25px;
+}
+.buble-contain {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.buble {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 2px;
+  background-color: rgb(22, 239, 239);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #7dd3b6;
+  cursor: pointer;
+}
+.buble:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 25px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.btn{
+  height: 40px;
+  width: 100px;
+  font-weight: 600;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border: none;
+}
+@media (max-width: 500px) {
+  .top-container h2 {
+    font-size: 13px;
+  }
+
+  .box {
+    width: 40%;
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .top-container {
+    padding: 0 10%;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23, 180, 180);
+  }
+
+  .elem{
+    width: 125px;
+    font-size: 25px;
+    margin-right: 40px;
+    /* padding: 5px; */
+  }
+  .buble {
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+   
+  }
+  .top-container{
+    height: 15%;
+  }
+}
